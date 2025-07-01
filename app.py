@@ -14,7 +14,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['RESULT_FOLDER'] = RESULT_FOLDER
 
 def calculate_score(distance, ring_width=10):
-    for score in range(10, 0, -1):
+for score in range(10, 0, -1):
         if distance <= score * ring_width:
             return score
     return 0
